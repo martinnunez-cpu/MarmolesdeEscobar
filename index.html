@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mármoles de Escobar · Mármoles y granitos a medida · Zona Norte</title>
+<meta name="description" content="Mármoles de Escobar S.A. Mármol y granito nacional e importado. Mesadas, vanitories, pisos y escaleras a medida. Showroom y fábrica sobre Panamericana km 51, Belén de Escobar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1a1816;--ink-soft:#4a4540;--paper:#f6f3ee;--paper-2:#efeae2;--line:#e0d9cf;
+  --bronze:#9a6a4f;--bronze-d:#7c5440;--white:#fffdfa;
+  --shadow:0 1px 2px rgba(26,24,22,.04),0 12px 40px rgba(26,24,22,.07);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,.serif{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-.02em;line-height:1.05}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--bronze);font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:100px;font-size:14px;font-weight:500;letter-spacing:.01em;transition:.25s;cursor:pointer;border:1px solid transparent}
+.btn-dark{background:var(--ink);color:var(--paper)}
+.btn-dark:hover{background:var(--bronze-d);transform:translateY(-2px)}
+.btn-light{background:var(--white);color:var(--ink)}
+.btn-light:hover{transform:translateY(-2px)}
+header{position:sticky;top:0;z-index:50;background:rgba(246,243,238,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Fraunces',serif;font-size:22px;font-weight:500;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;cursor:pointer}
+.logo small{font-family:'Inter';font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;border-left:1px solid var(--line);padding-left:10px;line-height:1.2}
+.navlinks{display:flex;gap:34px;align-items:center}
+.navlinks a{font-size:14px;font-weight:450;color:var(--ink-soft);transition:.2s}
+.navlinks a:hover,.navlinks a.active{color:var(--ink)}
+.navlinks a.cta{padding:11px 22px;border-radius:100px;background:var(--ink);color:var(--paper)}
+.navlinks a.cta:hover{background:var(--bronze-d)}
+.menu-btn{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--ink)}
+.view{display:none;animation:fade .5s ease}
+.view.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=2000&auto=format&fit=crop') center/cover}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,18,16,.8) 0%,rgba(20,18,16,.45) 45%,rgba(20,18,16,.12) 100%)}
+.hero-inner{position:relative;z-index:2;color:var(--paper);max-width:700px;padding:60px 0}
+.hero h1{font-size:clamp(42px,6vw,76px);font-weight:300;color:#fff}
+.hero h1 em{font-style:italic;color:#e9c9b3}
+.hero p{font-size:18px;margin:26px 0 36px;color:rgba(255,255,255,.82);max-width:540px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-meta{position:absolute;bottom:34px;right:32px;z-index:2;color:rgba(255,255,255,.7);font-size:12px;letter-spacing:.18em;text-transform:uppercase;text-align:right;line-height:2}
+.trust{background:var(--ink);color:var(--paper)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:38px 32px}
+.trust .item{display:flex;flex-direction:column;gap:4px}
+.trust .num{font-family:'Fraunces',serif;font-size:38px;font-weight:400;color:#e9c9b3}
+.trust .lbl{font-size:12.5px;color:rgba(255,255,255,.62)}
+section.blk{padding:108px 0}
+.sec-head{max-width:660px;margin-bottom:54px}
+.sec-head h2{font-size:clamp(32px,4.4vw,52px);margin:16px 0 0;font-weight:300}
+.sec-head p{margin-top:18px;color:var(--ink-soft);font-size:17px}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pcard{background:var(--white);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);transition:.3s;cursor:pointer;border:1px solid var(--line)}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 18px 50px rgba(26,24,22,.13)}
+.pcard .ph{height:230px;overflow:hidden}
+.pcard .ph img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.pcard:hover .ph img{transform:scale(1.06)}
+.pcard .pb{padding:26px 26px 30px}
+.pcard h3{font-size:25px}
+.pcard .tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--bronze);font-weight:600}
+.pcard p{font-size:14.5px;color:var(--ink-soft);margin:12px 0 18px}
+.pcard .more{font-size:13.5px;font-weight:600;color:var(--ink);display:inline-flex;gap:7px;align-items:center}
+.pcard:hover .more{color:var(--bronze-d)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.split .media{min-height:480px;background-size:cover;background-position:center}
+.split .body{background:var(--white);padding:64px 56px;display:flex;flex-direction:column;justify-content:center}
+.split .body h2{font-size:40px;font-weight:300;margin:16px 0 18px}
+.split .body p{color:var(--ink-soft);margin-bottom:14px}
+.checklist{list-style:none;margin:22px 0 34px;display:flex;flex-direction:column;gap:13px}
+.checklist li{display:flex;gap:13px;align-items:flex-start;font-size:15px}
+.checklist .mk{width:22px;height:22px;border-radius:50%;background:var(--paper-2);color:var(--bronze-d);display:grid;place-items:center;flex:none;font-size:12px;margin-top:2px}
+.designer{position:relative;border-radius:22px;overflow:hidden;min-height:420px;display:flex;align-items:center}
+.designer-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop') center/cover}
+.designer-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,18,16,.8),rgba(20,18,16,.25))}
+.designer .c{position:relative;z-index:2;color:#fff;padding:60px;max-width:560px}
+.designer h2{font-size:44px;font-weight:300;color:#fff}
+.designer p{color:rgba(255,255,255,.82);margin:18px 0 30px}
+.strip{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.strip .s{position:relative;aspect-ratio:3/4;border-radius:12px;overflow:hidden}
+.strip .s img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.strip .s:hover img{transform:scale(1.08)}
+.strip .s span{position:absolute;left:0;right:0;bottom:0;padding:14px 12px 12px;font-size:12px;font-weight:600;color:#fff;letter-spacing:.04em;background:linear-gradient(transparent,rgba(20,18,16,.85))}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{padding:30px 26px;border:1px solid var(--line);border-radius:16px;background:var(--white)}
+.step .n{font-family:'Fraunces',serif;font-size:30px;color:var(--bronze);margin-bottom:10px}
+.step h4{font-size:17px;margin-bottom:8px;font-weight:600;font-family:'Inter'}
+.step p{font-size:13.5px;color:var(--ink-soft)}
+.cta-blk{background:var(--ink);color:var(--paper);border-radius:24px;padding:70px 56px;display:grid;grid-template-columns:1.1fr 1fr;gap:54px;align-items:center}
+.cta-blk h2{font-size:42px;font-weight:300;color:#fff}
+.cta-blk p{color:rgba(255,255,255,.7);margin-top:16px}
+.form{display:flex;flex-direction:column;gap:13px}
+.form input,.form select{padding:15px 18px;border-radius:11px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;font-family:inherit;font-size:14px}
+.form input::placeholder{color:rgba(255,255,255,.5)}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+footer{background:var(--paper-2);padding:70px 0 34px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:48px;border-bottom:1px solid var(--line)}
+.fgrid h5{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--bronze);margin-bottom:18px;font-weight:600}
+.fgrid a,.fgrid p{display:block;font-size:14px;color:var(--ink-soft);margin-bottom:10px;transition:.2s}
+.fgrid a:hover{color:var(--ink)}
+.fbottom{display:flex;justify-content:space-between;padding-top:26px;font-size:12.5px;color:var(--ink-soft);flex-wrap:wrap;gap:10px}
+.wa{position:fixed;bottom:26px;right:26px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.4);transition:.25s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:30px;height:30px;fill:#fff}
+.phero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.phero-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.phero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(20,18,16,.85))}
+.phero .c{position:relative;z-index:2;color:#fff;padding:0 0 54px}
+.phero h1{font-size:clamp(40px,6vw,72px);font-weight:300;color:#fff}
+.bcrumb{font-size:12.5px;color:rgba(255,255,255,.7);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;display:flex;gap:8px}
+.bcrumb a{cursor:pointer}
+.bcrumb a:hover{color:#fff}
+.pintro{display:grid;grid-template-columns:1.4fr 1fr;gap:60px;padding:90px 0 40px}
+.pintro .lead{font-size:21px;line-height:1.55;color:var(--ink);font-family:'Fraunces';font-weight:300}
+.pintro .side{border-left:2px solid var(--bronze);padding-left:26px}
+.pintro .side .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--bronze);font-weight:600;margin-bottom:6px}
+.pintro .side p{font-size:14.5px;color:var(--ink-soft);margin-bottom:22px}
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:40px 0 20px}
+.spec{padding:26px 24px;background:var(--white);border:1px solid var(--line);border-radius:14px}
+.spec .v{font-family:'Fraunces';font-size:32px;color:var(--ink);font-weight:400}
+.spec .l{font-size:12.5px;color:var(--ink-soft);margin-top:5px}
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.app{border-radius:16px;overflow:hidden;position:relative;aspect-ratio:4/3}
+.app img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.app:hover img{transform:scale(1.06)}
+.app span{position:absolute;left:18px;bottom:16px;color:#fff;font-weight:600;font-size:16px;z-index:2}
+.app::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(20,18,16,.7))}
+@media(max-width:900px){
+  .navlinks{display:none}.menu-btn{display:block}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:30px 20px}
+  .pgrid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.split .media{min-height:300px}
+  .strip{grid-template-columns:repeat(3,1fr)}.steps{grid-template-columns:1fr 1fr}
+  .cta-blk{grid-template-columns:1fr;padding:48px 30px}.fgrid{grid-template-columns:1fr 1fr}
+  .pintro{grid-template-columns:1fr;gap:30px}.specs{grid-template-columns:1fr 1fr}.apps{grid-template-columns:1fr}
+  .wrap{padding:0 22px}section.blk{padding:72px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="logo" onclick="go('home')">Mármoles de Escobar <small>S.A.<br>Zona Norte</small></div>
+    <div class="navlinks">
+      <a onclick="go('home')" class="active">Inicio</a>
+      <a onclick="go('marmol')">Mármoles</a>
+      <a onclick="go('granito')">Granitos</a>
+      <a onclick="go('home')">Showroom</a>
+      <a class="cta" onclick="go('home')">Pedí tu presupuesto</a>
+    </div>
+    <button class="menu-btn" onclick="document.querySelector('.navlinks').style.display='flex'">☰</button>
+  </nav>
+</header>
+
+<!-- HOME -->
+<div class="view active" id="home">
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="wrap hero-inner">
+      <span class="eyebrow" style="color:#e9c9b3">Mármol · Granito · Mesadas · Vanitories · Pisos y escaleras</span>
+      <h1 style="margin-top:18px">La piedra noble que <em>jerarquiza</em> tu obra</h1>
+      <p>Mármol y granito nacional e importado, trabajado a medida. Asesoramiento, medición en obra y colocación en todo Zona Norte y Buenos Aires. Fábrica y showroom sobre Panamericana km 51.</p>
+      <div class="actions">
+        <a class="btn btn-light" onclick="go('home')">Pedí tu presupuesto →</a>
+        <a class="btn" style="border:1px solid rgba(255,255,255,.5);color:#fff" onclick="go('marmol')">Ver materiales</a>
+      </div>
+    </div>
+    <div class="hero-meta">Belén de Escobar<br>Buenos Aires</div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap">
+      <div class="item"><span class="num">Nac. + Imp.</span><span class="lbl">mármol y granito de primera</span></div>
+      <div class="item"><span class="num">A medida</span><span class="lbl">cada pieza, para tu proyecto</span></div>
+      <div class="item"><span class="num">Km 51</span><span class="lbl">showroom y fábrica propios</span></div>
+      <div class="item"><span class="num">48 h</span><span class="lbl">respuesta a tu consulta</span></div>
+    </div>
+  </div>
+
+  <section class="blk">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Nuestros materiales</span>
+        <h2>De la placa a tu obra terminada</h2>
+        <p>Trabajamos mármol y granito nacional e importado, y resolvemos cada pieza a medida. Tocá cada categoría para conocer más.</p>
+      </div>
+      <div class="pgrid">
+        <div class="pcard" onclick="go('marmol')">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop" alt="Mármol"></div>
+          <div class="pb"><span class="tag">Natural</span><h3>Mármoles</h3><p>Material noble de vetas únicas e irrepetibles. Elegancia clásica para espacios que buscan distinción.</p><span class="more">Ver mármoles →</span></div>
+        </div>
+        <div class="pcard" onclick="go('granito')">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1604709177225-055f99402ea3?q=80&w=1200&auto=format&fit=crop" alt="Granito"></div>
+          <div class="pb"><span class="tag">Natural</span><h3>Granitos</h3><p>Dureza y resistencia al rayado y las manchas. Ideal para mesadas de cocina de alto tránsito.</p><span class="more">Ver granitos →</span></div>
+        </div>
+        <div class="pcard" onclick="go('granito')">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?q=80&w=1200&auto=format&fit=crop" alt="Cuarzo"></div>
+          <div class="pb"><span class="tag">Cuarzo</span><h3>Cuarzo & Silestone</h3><p>Superficie no porosa, color uniforme y altísima resistencia a manchas. Cocinas y baños actuales.</p><span class="more">Consultar →</span></div>
+        </div>
+        <div class="pcard" onclick="go('marmol')">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Mesadas"></div>
+          <div class="pb"><span class="tag">A medida</span><h3>Mesadas</h3><p>Mesadas de cocina, islas y barras fabricadas a medida, con el material y la terminación que elijas.</p><span class="more">Consultar →</span></div>
+        </div>
+        <div class="pcard" onclick="go('marmol')">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop" alt="Vanitories"></div>
+          <div class="pb"><span class="tag">Baños</span><h3>Vanitories</h3><p>Vanitories y bachas en mármol y granito, a la medida de tu baño, con terminaciones a elección.</p><span class="more">Consultar →</span></div>
+        </div>
+        <div class="pcard" onclick="go('granito')">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?q=80&w=1200&auto=format&fit=crop" alt="Pisos y escaleras"></div>
+          <div class="pb"><span class="tag">Obra</span><h3>Pisos y escaleras</h3><p>Revestimientos, pisos, escaleras y molduras en piedra natural para obras y reformas.</p><span class="more">Consultar →</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="split">
+        <div class="media" style="background-image:url('https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1400&auto=format&fit=crop')"></div>
+        <div class="body">
+          <span class="eyebrow">Por qué Mármoles de Escobar</span>
+          <h2>Una marmolería que acompaña tu proyecto</h2>
+          <p>No vendemos solo placas: te asesoramos desde la elección del material hasta la colocación final.</p>
+          <ul class="checklist">
+            <li><span class="mk">✓</span> Asesoramiento según tu espacio, uso y presupuesto</li>
+            <li><span class="mk">✓</span> Medición en obra y planos de cada pieza</li>
+            <li><span class="mk">✓</span> Corte y pulido con tecnología de precisión</li>
+            <li><span class="mk">✓</span> Entrega y colocación con equipo propio</li>
+          </ul>
+          <div><a class="btn btn-dark" onclick="go('home')">Conocé el proceso →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="designer">
+        <div class="designer-bg"></div>
+        <div class="c">
+          <span class="eyebrow" style="color:#e9c9b3">Presupuesto sin cargo</span>
+          <h2 style="margin-top:14px">Contanos tu proyecto</h2>
+          <p>Mandanos las medidas y el material que imaginás. Te devolvemos una propuesta a medida en menos de 48 horas.</p>
+          <a class="btn btn-light" onclick="go('home')">Pedir presupuesto →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head center">
+        <span class="eyebrow">Materiales destacados</span>
+        <h2>Una paleta para inspirarte</h2>
+      </div>
+      <div class="strip">
+        <div class="s"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600&auto=format&fit=crop" alt=""><span>Estatuario</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=600&auto=format&fit=crop" alt=""><span>Carrara</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=600&auto=format&fit=crop" alt=""><span>Brown Antique</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1604709177595-ee9c2580e9a3?q=80&w=600&auto=format&fit=crop" alt=""><span>Negro Absoluto</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1616627561950-9f746e330187?q=80&w=600&auto=format&fit=crop" alt=""><span>Gris Mara</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=600&auto=format&fit=crop" alt=""><span>Travertino</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head center">
+        <span class="eyebrow">Cómo trabajamos</span>
+        <h2>Cuatro pasos hasta tu pieza</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="n">01</div><h4>Consulta</h4><p>Nos contás tu proyecto por WhatsApp o el formulario y te asesoramos sin cargo.</p></div>
+        <div class="step"><div class="n">02</div><h4>Medición</h4><p>Vamos a tu obra, tomamos medidas exactas y definimos las piezas.</p></div>
+        <div class="step"><div class="n">03</div><h4>Fabricación</h4><p>Cortamos y pulimos cada pieza con tecnología de precisión.</p></div>
+        <div class="step"><div class="n">04</div><h4>Colocación</h4><p>Instalamos con equipo propio y te entregamos todo terminado.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-blk">
+        <div>
+          <span class="eyebrow" style="color:#e9c9b3">Presupuesto sin cargo</span>
+          <h2 style="margin-top:14px">Pedí tu cotización hoy</h2>
+          <p>Dejanos tus datos y un asesor te contacta en menos de 48 horas con una propuesta a medida.</p>
+        </div>
+        <form class="form" onsubmit="event.preventDefault();alert('¡Gracias! Te contactamos en menos de 48 hs.')">
+          <div class="row"><input placeholder="Nombre" required><input placeholder="Teléfono / WhatsApp" required></div>
+          <input placeholder="Email" type="email" required>
+          <select><option>Material de interés</option><option>Mármol</option><option>Granito</option><option>Cuarzo / Silestone</option><option>Mesada a medida</option><option>No estoy seguro</option></select>
+          <button class="btn btn-light" type="submit" style="justify-content:center;margin-top:4px">Solicitar presupuesto →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- MARMOL -->
+<div class="view" id="marmol">
+  <section class="phero">
+    <div class="phero-bg" style="background-image:url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop')"></div>
+    <div class="wrap c">
+      <div class="bcrumb"><a onclick="go('home')">Inicio</a> / <a onclick="go('home')">Materiales</a> / Mármoles</div>
+      <span class="eyebrow" style="color:#e9c9b3">Piedra natural</span>
+      <h1>Mármoles</h1>
+    </div>
+  </section>
+  <div class="wrap">
+    <div class="pintro">
+      <p class="lead">El mármol es el material noble por excelencia. Compuesto en gran parte por carbonato de calcio, sus impurezas le dan una variedad de colores y vetas únicas e irrepetibles. Aporta elegancia y calidez a mesadas, vanitories, pisos, escaleras y revestimientos.</p>
+      <div class="side">
+        <div class="k">Ideal para</div>
+        <p>Espacios de diseño, vanitories, mesas, pisos, escaleras y revestimientos de alto valor estético.</p>
+        <div class="k">Mantenimiento</div>
+        <p>Medio. Sellado periódico y limpieza con productos neutros; se evita el contacto con ácidos.</p>
+        <a class="btn btn-dark" onclick="go('home')">Pedir presupuesto →</a>
+      </div>
+    </div>
+    <div class="specs">
+      <div class="spec"><div class="v">Único</div><div class="l">Vetas irrepetibles</div></div>
+      <div class="spec"><div class="v">Nac+Imp</div><div class="l">Nacional e importado</div></div>
+      <div class="spec"><div class="v">2–3 cm</div><div class="l">Espesores de placa</div></div>
+      <div class="spec"><div class="v">100%</div><div class="l">Material natural</div></div>
+    </div>
+  </div>
+  <section class="blk" style="padding-top:60px">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">Por qué elegirlo</span><h2 style="font-size:40px">Elegancia que distingue cada ambiente</h2></div>
+      <div class="split">
+        <div class="media" style="background-image:url('https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1400&auto=format&fit=crop')"></div>
+        <div class="body">
+          <ul class="checklist">
+            <li><span class="mk">✓</span> Cada placa es única: vetas y tonos irrepetibles</li>
+            <li><span class="mk">✓</span> Aporta calidez y valor a cualquier espacio</li>
+            <li><span class="mk">✓</span> Amplia variedad de colores nacionales e importados</li>
+            <li><span class="mk">✓</span> Versátil: mesadas, vanitories, pisos, escaleras, mesas</li>
+            <li><span class="mk">✓</span> Material noble que mejora con el tiempo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head center"><span class="eyebrow">Variedades</span><h2 style="font-size:40px">Algunos de nuestros mármoles</h2></div>
+      <div class="strip">
+        <div class="s"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600&auto=format&fit=crop" alt=""><span>Estatuario</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=600&auto=format&fit=crop" alt=""><span>Carrara</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=600&auto=format&fit=crop" alt=""><span>Travertino</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1604709177595-ee9c2580e9a3?q=80&w=600&auto=format&fit=crop" alt=""><span>Marrón Emperador</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1616627561950-9f746e330187?q=80&w=600&auto=format&fit=crop" alt=""><span>Gris San Marino</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=600&auto=format&fit=crop" alt=""><span>Crema Marfil</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head center"><span class="eyebrow">Aplicaciones</span><h2 style="font-size:40px">Dónde luce el mármol</h2></div>
+      <div class="apps">
+        <div class="app"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1000&auto=format&fit=crop" alt=""><span>Vanitories y baños</span></div>
+        <div class="app"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop" alt=""><span>Mesas y mesadas</span></div>
+        <div class="app"><img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?q=80&w=1000&auto=format&fit=crop" alt=""><span>Pisos y escaleras</span></div>
+      </div>
+      <div class="center" style="margin-top:46px"><a class="btn btn-dark" onclick="go('home')">Quiero una pieza en mármol →</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- GRANITO -->
+<div class="view" id="granito">
+  <section class="phero">
+    <div class="phero-bg" style="background-image:url('https://images.unsplash.com/photo-1604709177225-055f99402ea3?q=80&w=2000&auto=format&fit=crop')"></div>
+    <div class="wrap c">
+      <div class="bcrumb"><a onclick="go('home')">Inicio</a> / <a onclick="go('home')">Materiales</a> / Granitos</div>
+      <span class="eyebrow" style="color:#e9c9b3">Piedra natural</span>
+      <h1>Granitos</h1>
+    </div>
+  </section>
+  <div class="wrap">
+    <div class="pintro">
+      <p class="lead">Roca ígnea de gran dureza, brillo y resistencia al rayado y las manchas. El granito es la elección clásica para mesadas de cocina, pisos, escaleras y frentes, disponible en una amplia gama de colores y vetas naturales.</p>
+      <div class="side">
+        <div class="k">Ideal para</div>
+        <p>Mesadas de cocina de uso intensivo, baños, pisos, escaleras y revestimientos exteriores.</p>
+        <div class="k">Mantenimiento</div>
+        <p>Bajo. Limpieza con agua y jabón neutro; sellado periódico recomendado.</p>
+        <a class="btn btn-dark" onclick="go('home')">Pedir presupuesto →</a>
+      </div>
+    </div>
+    <div class="specs">
+      <div class="spec"><div class="v">7/10</div><div class="l">Dureza en escala Mohs</div></div>
+      <div class="spec"><div class="v">+20</div><div class="l">Colores disponibles</div></div>
+      <div class="spec"><div class="v">2–3 cm</div><div class="l">Espesores de placa</div></div>
+      <div class="spec"><div class="v">100%</div><div class="l">Material natural</div></div>
+    </div>
+  </div>
+  <section class="blk" style="padding-top:60px">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">Por qué elegirlo</span><h2 style="font-size:40px">Resistencia que dura generaciones</h2></div>
+      <div class="split">
+        <div class="media" style="background-image:url('https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?q=80&w=1400&auto=format&fit=crop')"></div>
+        <div class="body">
+          <ul class="checklist">
+            <li><span class="mk">✓</span> Altísima resistencia al rayado y al calor de ollas</li>
+            <li><span class="mk">✓</span> No se deforma ni pierde brillo con el uso diario</li>
+            <li><span class="mk">✓</span> Cada placa es única: vetas y tonos irrepetibles</li>
+            <li><span class="mk">✓</span> Excelente relación calidad–precio</li>
+            <li><span class="mk">✓</span> Apto para exteriores y zonas de alto tránsito</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head center"><span class="eyebrow">Variedades</span><h2 style="font-size:40px">Algunos de nuestros granitos</h2></div>
+      <div class="strip">
+        <div class="s"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=600&auto=format&fit=crop" alt=""><span>Brown Antique</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=600&auto=format&fit=crop" alt=""><span>Blanco Cristal</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1604709177595-ee9c2580e9a3?q=80&w=600&auto=format&fit=crop" alt=""><span>Negro Absoluto</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=600&auto=format&fit=crop" alt=""><span>Verde Ubatuba</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1616627561950-9f746e330187?q=80&w=600&auto=format&fit=crop" alt=""><span>Gris Mara</span></div>
+        <div class="s"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600&auto=format&fit=crop" alt=""><span>Crema Bahía</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head center"><span class="eyebrow">Aplicaciones</span><h2 style="font-size:40px">Dónde luce el granito</h2></div>
+      <div class="apps">
+        <div class="app"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop" alt=""><span>Mesadas de cocina</span></div>
+        <div class="app"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1000&auto=format&fit=crop" alt=""><span>Baños y vanitories</span></div>
+        <div class="app"><img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?q=80&w=1000&auto=format&fit=crop" alt=""><span>Pisos y escaleras</span></div>
+      </div>
+      <div class="center" style="margin-top:46px"><a class="btn btn-dark" onclick="go('home')">Quiero una mesada de granito →</a></div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="logo" style="margin-bottom:16px">Mármoles de Escobar <small>S.A.<br>Zona Norte</small></div>
+        <p style="max-width:300px">Mármol y granito nacional e importado, trabajado a medida. Mesadas, vanitories, pisos y escaleras. Belén de Escobar, Buenos Aires.</p>
+      </div>
+      <div>
+        <h5>Materiales</h5>
+        <a onclick="go('marmol')">Mármoles</a><a onclick="go('granito')">Granitos</a><a onclick="go('granito')">Cuarzo / Silestone</a><a onclick="go('home')">Mesadas</a>
+      </div>
+      <div>
+        <h5>Servicios</h5>
+        <a onclick="go('home')">Vanitories</a><a onclick="go('home')">Pisos y escaleras</a><a onclick="go('home')">Molduras</a><a onclick="go('home')">Colocación</a>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <p>Colectora Oeste, Ruta Panamericana km 51<br>Belén de Escobar, Bs. As. (1625)</p>
+        <a href="tel:+543484258809">Tel (0348) 425-8809</a>
+        <a href="https://wa.me/5491160943449" target="_blank">WhatsApp +54 11 6094 3449</a>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© 2026 Mármoles de Escobar S.A. · Todos los derechos reservados</span>
+      <span>Mock-up de propuesta · Diseño North/star</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5491160943449" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.8.9.9-2.7-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.5 7.5 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.4v-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5.1 5.1 0 0 0 1 2.7 11.6 11.6 0 0 0 4.5 4c.6.3 1.1.4 1.5.6a3.6 3.6 0 0 0 1.6.1c.5-.1 1.4-.6 1.6-1.1a2 2 0 0 0 .1-1.1c0-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+function go(id){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.navlinks a').forEach(a=>a.classList.remove('active'));
+  window.scrollTo({top:0,behavior:'instant'});
+}
+</script>
+</body>
+</html>
